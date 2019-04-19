@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  postgres:
+    image: kiasaki/alpine-postgres:9.5
+    volumes:
+      - /var/lib/postgresql/data
+    ports:
+      - '5432:5432'      
